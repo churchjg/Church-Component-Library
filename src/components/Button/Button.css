@@ -1,0 +1,29 @@
+button {
+    border-radius: 2px;
+    padding: 5px 25px;
+}
+
+.button-primary {
+    background-color: #0069D9;
+    color: white;
+    border: #0069D9;
+    /* font-weight: 900; */
+}
+.button-danger {
+    background-color: #FF4933;
+    color: white;
+    border: #FF4933;
+    /* font-weight: 900; */
+}
+.button-success {
+    background-color: #1DB036;
+    color: white;
+    border: #1DB036;
+    /* font-weight: 900; */
+}
+.button-warning {
+    background-color:#fbff09;
+    color: red;
+    border: #fbff09;
+    /* font-weight: 900; */
+}
