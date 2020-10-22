@@ -19,12 +19,12 @@ const Button = (props) => {
         classList.push("large")
     }
 
-    if(props.clean){
-        classList.push("clean")
+    if(props.empty){
+        classList.push("empty")
     }
 
-    if(props.flat){
-        classList.push("flat")
+    if(props.blank){
+        classList.push("blank")
     }
 
     if (props.hasOwnProperty('icon') && props.hasOwnProperty('label')==false) {

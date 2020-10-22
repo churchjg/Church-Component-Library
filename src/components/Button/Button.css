@@ -3,17 +3,17 @@
     padding: 5px 25px;
     border-width: 2px;
     border-style: solid;
-    color: white;
-    font-size: 11px;
-    font-weight: 300;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    font-weight: 900;
 }
 
 .button:hover {
     filter: brightness(90%);
 }
 .button-default {
-    --base-color: #000000;
-    --flat-color: #F6F7F8;
+    --base-color: #4c00fc;
+    --blank-color: #F6F7F8;
     background-color: var(--base-color);
     border-color: var(--base-color);
 
@@ -48,13 +48,13 @@
     font-weight: 900;
 }
 
-.clean {
+.empty {
     background-color: #ffffff;
     color: var(--base-color)
 }
 
-.flat {
-    background-color: var(--flat-color);
+.blank {
+    background-color: var(--blank-color);
     color: var(--base-color);
     border: none;
 }
@@ -62,20 +62,4 @@
 .large {
     padding: 15px 25px;
     font-size: 12px;
-}
-
-.icon {
-    padding: 10px 10px;
-}
-
-.icon-text {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 15px;
-    font-size: 12px;
-
-}
-.icon-text img{
-    padding-right: 10px;
 }
