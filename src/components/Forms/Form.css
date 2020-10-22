@@ -27,7 +27,14 @@ p {
 } 
 
 .select{
-    appearance: menulist;
+    background-image: url('/home/churchjg/SEI/projects/my-first-component-library/src/components/Icons/drop down arrow.svg');
+    background-position: 95%;
+    background-repeat: no-repeat;
+    appearance: none;
+    opacity: 1;
+}
+.select:focus {
+    outline: none;
 }
 
 .filled {

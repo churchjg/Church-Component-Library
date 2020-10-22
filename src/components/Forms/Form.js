@@ -1,5 +1,6 @@
 import React from 'react'
 import './Form.css'
+import dropDownArrow from '/home/churchjg/SEI/projects/my-first-component-library/src/components/Icons/drop down arrow.svg'
 
 const Form = (props) => {
 
@@ -11,17 +12,17 @@ const Form = (props) => {
     if (props.large) {
         classes.push("large")
     }
-    if(props.filled){
+    if (props.filled) {
         classes.push("filled")
     }
-    if(props.type=="select"){
+    if (props.type == "select") {
         classes.push("select")
     }
 
     const emailForm = props => {
         return <div>
             <p>{props.placeholder}</p>
-            <input type={props.type} placeholder={props.placeholder} className={classes.join(" ")} />
+            <InputBlank props={props} className={classes.join(" ")} />
         </div>
     }
 
@@ -31,9 +32,9 @@ const Form = (props) => {
         })
 
         return <select value={props.value} className={classes.join(" ")}>
-            <option disabled selected hidden>Select</option>
+            <option className="select-default">Select</option>
             {options}
-            </select>
+        </select>
     }
     return (
         <form className="form">

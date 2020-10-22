@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 
 import Form from './Form'
 
-let options = ["Pizza", "Wings", "Burgers", "Fries", "Yes"]
+let options = ["Pizza", "Cheesesteak", "Burgers", "Wings", "Hot Dog"]
 
 storiesOf('Form', module)
 
