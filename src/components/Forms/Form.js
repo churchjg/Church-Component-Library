@@ -1,6 +1,7 @@
 import React from 'react'
 import './Form.css'
-import dropDownArrow from '/home/churchjg/SEI/projects/my-first-component-library/src/components/Icons/drop down arrow.svg'
+// import dropDownArrow from '/home/churchjg/SEI/projects/my-first-component-library/src/components/Icons/drop down arrow.svg'
+import Amounts from './Amount'
 
 const Form = (props) => {
 
@@ -18,16 +19,17 @@ const Form = (props) => {
     if (props.type == "select") {
         classes.push("select")
     }
+    if (props.type == "email") {
+        classes.push("email")
+    }
 
     const emailForm = props => {
-        return <div>
-            <p>{props.placeholder}</p>
-            <InputBlank props={props} className={classes.join(" ")} />
-        </div>
+        return <email value={props.value} className={classes.join(" ")}>
+            <option className="email-default">Email</option>
+        </email>
     }
 
     const selectForm = props => {
-        let arrow = dropDownArrow
 
         let options = props.options.map(val => {
             return <option>{val}</option>
@@ -38,8 +40,15 @@ const Form = (props) => {
             {options}
         </select>
     }
+
+    const selectAmountForm = props => {
+        return <div className={`Amounts ${classes.join(" ")}`}>
+            <Amounts props={props} />
+        </div>
+    }
     return (
         <form className="form">
+            {props.type == "selectAmountForm" ? selectAmountForm(props) : null}
             {props.type == "email" ? emailForm(props) : null}
             {props.type == "select" ? selectForm(props) : null}
         </form>

@@ -17,17 +17,18 @@ p {
 }
 
 .medium {
-    font-size: 16px;
+    font-size: 18px;
     padding: 10px 5px;
 }
 
 .large {
-    font-size: 18px;
+    font-size: 25px;
     padding: 15px 5px;
+    font-weight: 900;
 } 
 
 .select{
-    background-image: url(src/components/Icons/drop-down-arrow.svg);
+    /* background-image: url(src/components/Icons/drop-down-arrow.svg); */
     background-position: 95%;
     background-repeat: no-repeat;
     appearance: none; 
@@ -36,7 +37,23 @@ p {
 .select:focus {
     outline: none;
 }
+.email{
+    /* background-image: url(src/components/Icons/drop-down-arrow.svg); */
+    background-position: 95%;
+    background-repeat: no-repeat;
+    appearance: none; 
+    opacity: 1;
+}
+.email :focus {
+    outline: none;
+}
+
 
 .filled {
     background-color: white;
+    border: 2px solid black;
 } 
+
+.select-amount {
+    width: 50%;
+}
