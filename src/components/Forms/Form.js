@@ -4,7 +4,7 @@ import dropDownArrow from '/home/churchjg/SEI/projects/my-first-component-librar
 
 const Form = (props) => {
 
-    let classes = ["input"]
+    let classes = ["form-input"]
 
     if (props.medium) {
         classes.push("medium")
@@ -27,6 +27,8 @@ const Form = (props) => {
     }
 
     const selectForm = props => {
+        let arrow = dropDownArrow
+
         let options = props.options.map(val => {
             return <option>{val}</option>
         })

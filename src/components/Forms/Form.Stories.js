@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import Form from './Form'
+import Form from '../Forms/Form'
 
 let options = ["Pizza", "Cheesesteak", "Burgers", "Wings", "Hot Dog"]
 
@@ -13,7 +13,6 @@ storiesOf('Form', module)
     .add('Email Large', () => <Form type="email" large placeholder="Email" />)
 
     //Selects
-
     .add('Select Small', () => <Form type="select" options={options} />)
     .add('Select Medium', () => <Form type="select" medium options={options} />)
     .add('Select Large', () => <Form type="select" large options={options} />)

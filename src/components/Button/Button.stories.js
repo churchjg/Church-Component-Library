@@ -6,15 +6,15 @@ import cart from '/home/churchjg/SEI/projects/my-first-component-library/src/com
 
 storiesOf('Button', module)
 
-    //Basics
-    .add('Basic', () => <Button label="Jon's Button" />)
-    .add('Basic Large', () => <Button large label="Jon's Button" />)
+    //Defaults
+    .add('Default', () => <Button label="Jon's Button" />)
+    .add('Default Large', () => <Button large label="Jon's Button" />)
 
-    .add('Basic Empty', () => <Button empty label="Jon's Button" />)
-    .add('Basic Empty Large', () => <Button empty large label="Jon's Button" />)
+    .add('Default Empty', () => <Button empty label="Jon's Button" />)
+    .add('Default Empty Large', () => <Button empty large label="Jon's Button" />)
 
-    .add('Basic Blank', () => <Button blank label="Jon's Button" />)
-    .add('Basic Blank Large', () => <Button blank large label="Jon's Button" />)
+    .add('Default Blank', () => <Button blank label="Jon's Button" />)
+    .add('Default Blank Large', () => <Button blank large label="Jon's Button" />)
 
 
     //Primary Buttons

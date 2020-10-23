@@ -1,51 +1,52 @@
 .button {
-    border-radius: 2px;
-    padding: 5px 25px;
+    border-radius: 4px;
+    padding: 12px 20px;
     border-width: 2px;
     border-style: solid;
-    color: rgb(255, 255, 255);
-    font-size: 12px;
+    color: white;
+    font-size: 11px;
     font-weight: 900;
 }
 
 .button:hover {
     filter: brightness(90%);
 }
+
 .button-default {
-    --base-color: #4c00fc;
+    --base-color: #000000;
     --blank-color: #F6F7F8;
     background-color: var(--base-color);
     border-color: var(--base-color);
-
 }
+
 
 .button-primary {
-    background-color: #0069D9;
-    color: white;
-    border: #0069D9;
-    font-weight: 900;
-}
+    --base-color: #33A0FF;
+    --blank-color: #EAF5FF;
+    background-color: var(--base-color);
+    border-color: #33A0FF;
+} 
 
 .button-danger {
-    background-color: #FF4933;
-    color: white;
-    border: #FF4933;
-    font-weight: 900; 
-}
+    --base-color: #FF4858;
+    --blank-color: #FFECEE;
+    background-color: var(--base-color);
+    border-color: #FF4858;
+} 
 
 .button-success {
-    background-color: #1DB036;
-    color: white;
-    border: #1DB036;
-    font-weight: 900;
+    --base-color: #0AD00A;
+    --blank-color: #E6FAE6;
+    background-color: var(--base-color);
+    border-color:  #0AD00A;
 }
 
 
 .button-warning {
-    background-color:#fbff09;
-    color: red;
-    border: #fbff09;
-    font-weight: 900;
+    --base-color: #FCC400;
+    --blank-color: #FBF5E1;
+    background-color: var(--base-color);
+    border-color:  #FCC400;
 }
 
 .empty {
@@ -59,7 +60,22 @@
     border: none;
 }
 
-.large {
+.button-large {
     padding: 15px 25px;
     font-size: 12px;
+}
+.icon {
+    padding: 15px 15px;
+}
+
+.icon-text {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+.icon-text img{
+    padding-right: 10px;
 }
