@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 
 import Form from './Form'
 
-let options = ["Pizza", "Cheesesteak", "Burgers", "Wings", "Hot Dog"]
+let options = ["Pizza", "Cheesesteak", "Cheeseburger", "Fried Chicken", "Hot Dog", "Mac & Cheese", "Diet Coke", "Water"]
 
 //Select Amount
 let numberMin = 0
@@ -23,9 +23,9 @@ storiesOf('Forms', module)
     .add('Select Medium', () => <Form type="select" medium options={options} />)
     .add('Select Large', () => <Form type="select" large options={options} />)
 
-    .add('Select Filled Small', () => <Form type="select" filled options={options} />)
-    .add('Select Filled Medium', () => <Form type="select" filled medium options={options} />)
-    .add('Select Filled Large', () => <Form type="select" filled large options={options} />)
+    .add('Select-Box Small', () => <Form type="select" selectBox options={options} />)
+    .add('Select-Box Medium', () => <Form type="select" selectBox medium options={options} />)
+    .add('Select-Box Large', () => <Form type="select" selectBox large options={options} />)
 
     //Select Amount
-    .add('Select Amount', () => <Form type="selectAmountForm" filled min={numberMin} max={numberMax} value={numberValue} step={numberChange} />)
+    .add('Select Amount', () => <Form type="selectAmountForm" select-box min={numberMin} max={numberMax} value={numberValue} step={numberChange} />)

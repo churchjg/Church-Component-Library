@@ -13,8 +13,8 @@ const Form = (props) => {
     if (props.large) {
         classes.push("large")
     }
-    if (props.filled) {
-        classes.push("filled")
+    if (props.selectBox) {
+        classes.push("selectBox")
     }
     if (props.type == "select") {
         classes.push("select")
@@ -22,10 +22,21 @@ const Form = (props) => {
     if (props.type == "email") {
         classes.push("email")
     }
+    let Change = (evt) => {
+        this.setState({
+            value: evt.target.value
+        })
+    }
 
+    let Submit = (evt) => {
+        this.setState({
+            value: evt.target.value
+        })
+    }
     const emailForm = props => {
         return <email value={props.value} className={classes.join(" ")}>
-            <option className="email-default">Email</option>
+            <option className="email">Email</option>
+            <input onChange= {Change} onSubmit={Submit}></input>
         </email>
     }
 
