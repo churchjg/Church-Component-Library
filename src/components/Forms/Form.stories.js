@@ -38,5 +38,6 @@ storiesOf('Forms', module)
     //Checkboxes
     // .add("Checkbox Black", () => <Checkbox />)
     .add("Checkbox Blue", () => <Checkbox blue label='' />)
-    .add("Checkbox Black", () => <Checkbox label="Don't show this popup again" />)
+    .add("Checkbox Black with Message", () => <Checkbox label="Don't show this popup again" />)
+    .add("Checkbox Black", () => <Checkbox />)
     
