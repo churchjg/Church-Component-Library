@@ -1,5 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import Checkbox from "./Checkbox.js";
 
 import Form from './Form'
 
@@ -31,5 +32,11 @@ storiesOf('Forms', module)
     .add('Select Amount', () => <Form type="selectAmountForm" select-box min={numberMin} max={numberMax} value={numberValue} step={numberChange} />)
 
     //Voucher
-    .add('Voucher', () => <Form type="voucherForm" placeholder="Voucher code" buttonText="Redeem" medium/>)
+    .add('Voucher', () => <Form type="voucherForm" placeholder="Voucher code" buttonText="Redeem" medium />)
     .add('Voucher Large', () => <Form type="voucherForm" placeholder="Voucher code" buttonText="Redeem" voucherFormLarge />)
+
+    //Checkboxes
+    // .add("Checkbox Black", () => <Checkbox />)
+    .add("Checkbox Blue", () => <Checkbox blue label='' />)
+    .add("Checkbox Black", () => <Checkbox label="Don't show this popup again" />)
+    
