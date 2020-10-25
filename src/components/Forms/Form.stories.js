@@ -29,3 +29,7 @@ storiesOf('Forms', module)
 
     //Select Amount
     .add('Select Amount', () => <Form type="selectAmountForm" select-box min={numberMin} max={numberMax} value={numberValue} step={numberChange} />)
+
+    //Voucher
+    .add('Voucher', () => <Form type="voucherForm" placeholder="Voucher code" buttonText="Redeem" medium/>)
+    .add('Voucher Large', () => <Form type="voucherForm" placeholder="Voucher code" buttonText="Redeem" voucherFormLarge />)

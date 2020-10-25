@@ -50,3 +50,36 @@ p {
 .select-amount {
     width: 50%;
 }
+
+
+.voucher-input {
+    display: flex;
+    justify-content: flex-start;
+    border-color: #F1F3F4;
+    border-style: solid;
+    border-radius: 4px; 
+    padding: 25px 15px;
+    font-size: 12px;
+    color: gray;
+}
+
+.voucher-blank{ 
+    width: 50px;
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+    font-size: 12px;
+}
+
+.voucherForm-button{
+    background-color: #33A0FF;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    font-size: 12px;
+}
+
+.voucherForm-large {
+    width: 75px;
+    padding: 20px 5px;
+} 
