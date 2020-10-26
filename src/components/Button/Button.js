@@ -5,7 +5,7 @@ import Icon from '../Icons/Icons'
 // This is a functional component - just sent up a little differently as an arrow function!
 const Button = (props) => {
 
-    let types = ["danger", "success", "warning", "primary"]
+    // let types = ["danger", "success", "warning", "primary"]
     let classList = ["button"]
 
     if(props.hasOwnProperty('type')){
