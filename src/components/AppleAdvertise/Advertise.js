@@ -17,8 +17,8 @@ export default function Advertise(props) {
     let contentClasses = ["advertise-content"]
     let hoverClasses = ["advertise-hover-icon-container"]
 
-    let favoriteIcon = <Icon src={favorite2} />
-    let cartIcon = <Icon src={cart2} />
+    let favoriteIcon = <Icon src={favorite} />
+    let cartIcon = <Icon src={cart} />
 
 
     if(props.horizontal){
@@ -32,8 +32,8 @@ export default function Advertise(props) {
         classes.push("advertise-blank")
         contentClasses.push("advertise-content-vertical-blank")
         hoverClasses.push("advertise-hover-icon-container-blank")
-        favoriteIcon = <Icon src={favorite} />
-        cartIcon = <Icon src={cart} />
+        favoriteIcon = <Icon src={favorite2} />
+        cartIcon = <Icon src={cart2} />
     }
     if(props.borderless){
         classes.push("advertise-container-borderless")

@@ -76,7 +76,7 @@
 }
 
 .advertise-inline-buttons {
-    width: 120px;
+    width: 80px;
     display: flex;
     justify-content: space-between;
 
@@ -84,7 +84,7 @@
 
 .advertise-hover-icons {
     position: absolute;
-    width: 100px;
+    width: 10px;
     display: flex;
     justify-content: center;
     opacity: 0;
@@ -93,8 +93,8 @@
 
 .advertise-hover-icon-container {
     width: 30px;
-    height: 30px;
-    border: 2px solid #C3DFF6;
+    height: 40px;
+    padding: 8px;
     margin: 5px;
     border-radius: 20px;
     display: flex;
@@ -103,6 +103,9 @@
 
 .advertise-hover-icon-container-blank {
     border: none;
+    padding: 8px;
+    width: 30px;
+    height: 40px;
 }
 
 .advertise-vertical:hover .advertise-hover-icons {
@@ -113,7 +116,7 @@
     opacity: 5%;
 }
 .advertise-image{
-    width: 100px;
+    width: 200px;
 }
 
 .advertise-image-inline {
